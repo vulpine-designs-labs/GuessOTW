@@ -1,0 +1,39 @@
+.main {
+    position: relative;
+    height: calc(100vh - 56px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 5;
+}
+
+.content {
+    z-index: 1000;
+}
+
+@media (min-width: 0px) and (orientation: landscape) {
+    .main {
+        height: calc(100vh - 48px);
+    }
+}
+
+@media (min-width: 600px) {
+    .main {
+        height: calc(100vh - 64px);
+    }
+}
+
+.main::after {
+    content: "";
+    background-image: url('../../public/images/HomePage/bg-image.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: 100;
+}

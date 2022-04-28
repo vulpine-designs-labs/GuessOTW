@@ -38,7 +38,8 @@ function App() {
 				theme: makeTheme(dark ? 'dark' : 'light')
 			});
 			localStorage.setItem('userSelectedMode', dark ? 'dark' : 'light');
-		} 
+		},
+		darkMode: defaultDarkMode
 	};
 
 

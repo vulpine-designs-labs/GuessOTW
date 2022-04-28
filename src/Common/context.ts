@@ -1,12 +1,14 @@
 import { createContext } from "react"
 
 export interface ContextProps {
-    setDarkmode: (dark: boolean) => void
+    setDarkmode: (dark: boolean) => void,
+    darkMode: boolean
 };
 
 export class ContextProps {
     constructor() {
-        this.setDarkmode = (dark: boolean) => {}
+        this.setDarkmode = (dark: boolean) => {};
+        this.darkMode = false;
     }
 };
 
